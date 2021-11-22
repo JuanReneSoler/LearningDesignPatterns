@@ -20,11 +20,15 @@ namespace patrones.Mediator
 
 	    if(_participantes.ContainsKey(para.Nombre))
 	    {
-		_participantes[para.Nombre].Recivir(msg);
+		_participantes[para.Nombre].Recibir(msg);
 		_mensajes.Add(msg);
 	    }
 	}
 	
-	public override
+	public override void Registrar(Usuario usuario)
+	{
+	    if(_participantes.ContainsKey(usuario.Nombre))
+		_participantes.Add(usuario.Nombre, usuario);
+	}
     }
 }

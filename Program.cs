@@ -25,7 +25,17 @@ namespace patrones
 	{
 	    Console.Clear();
 	    Start.RunPatron();
-	    Console.ReadKey();
+	    Finalice();
+	}
+
+	static void Finalice()
+	{
+	    Console.WriteLine(@"
+Press R to Restart
+and another key to Exit");
+	    var keyPressed = Console.ReadKey(true);
+	    if(keyPressed.Key == ConsoleKey.R) Run();
+	    Console.Clear();
 	}
 
         static void Main(string[] args) => Run();
