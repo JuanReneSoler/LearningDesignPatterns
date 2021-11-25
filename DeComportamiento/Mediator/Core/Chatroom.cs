@@ -27,7 +27,7 @@ namespace patrones.Mediator
 	
 	public override void Registrar(Usuario usuario)
 	{
-	    if(_participantes.ContainsKey(usuario.Nombre))
+	    if(!_participantes.ContainsKey(usuario.Nombre))
 		_participantes.Add(usuario.Nombre, usuario);
 	}
     }

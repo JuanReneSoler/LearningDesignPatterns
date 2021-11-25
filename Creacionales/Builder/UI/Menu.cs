@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using patrones.Builder;
 
 namespace patrones.Builder
 {

@@ -32,7 +32,7 @@ namespace patrones
 	{
 	    Console.WriteLine(@"
 Press R to Restart
-and another key to Exit");
+and another key to Finalize");
 	    var keyPressed = Console.ReadKey(true);
 	    if(keyPressed.Key == ConsoleKey.R) Run();
 	    Console.Clear();
