@@ -76,9 +76,9 @@ namespace patrones.Mediator
 	    Console.SetCursorPosition(0, 0);
 	    Console.Write($@"
 
-{RenderCursor(1)} {_usuario1}
-{RenderCursor(2)} {_usuario2}
-{RenderCursor(3)} Ver todos los mensajes
+{RenderCursor(1)} {_usuario1}({_usuario1.Mensajes.Count()})
+{RenderCursor(2)} {_usuario2}({_usuario2.Mensajes.Count()})
+{RenderCursor(3)} Ver todos los mensajes ({_chat.Mensajes.Count()})
 
 Press Q to Exit");
 	}

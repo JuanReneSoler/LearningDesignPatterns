@@ -25,8 +25,8 @@ patrones de comportamiento
 ** command
 ** interpreter
 ** iterator
-* mediator
-* memento
+** mediator
+** memento
 * observer
 * state
 * strategy
