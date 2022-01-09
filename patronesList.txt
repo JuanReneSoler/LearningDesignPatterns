@@ -27,7 +27,7 @@ patrones de comportamiento
 ** iterator
 ** mediator
 ** memento
-* observer
+** observer
 * state
 * strategy
 * template method
