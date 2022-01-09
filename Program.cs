@@ -17,7 +17,8 @@
 //using patrones.Iterator;
 //using patrones.Mediator;
 //using patrones.Memento;
-using patrones.Observer;
+//using patrones.Observer;
+using patrones.State;
 
 namespace patrones
 {
