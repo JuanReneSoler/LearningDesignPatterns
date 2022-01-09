@@ -19,7 +19,8 @@
 //using patrones.Memento;
 //using patrones.Observer;
 //using patrones.State;
-using patrones.Strategy;
+//using patrones.Strategy;
+using patrones.TemplateMethod;
 
 namespace patrones
 {

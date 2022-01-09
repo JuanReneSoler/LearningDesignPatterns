@@ -30,5 +30,5 @@ patrones de comportamiento
 ** observer
 ** state
 ** strategy
-* template method
+** template method
 * visitor
