@@ -18,7 +18,8 @@
 //using patrones.Mediator;
 //using patrones.Memento;
 //using patrones.Observer;
-using patrones.State;
+//using patrones.State;
+using patrones.Strategy;
 
 namespace patrones
 {

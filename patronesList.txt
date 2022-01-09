@@ -29,6 +29,6 @@ patrones de comportamiento
 ** memento
 ** observer
 ** state
-* strategy
+** strategy
 * template method
 * visitor

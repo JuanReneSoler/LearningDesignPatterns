@@ -33,7 +33,7 @@ namespace Core.patrones
 	public void Remove(object item) => _items.Remove(item);
 	public override string ToString()
 	{
-	    var str = string.Empty;
+	    var str = $"{Title}\n";
 	    var i = 1;
 	    _items.ForEach((item)=>
 		    {
