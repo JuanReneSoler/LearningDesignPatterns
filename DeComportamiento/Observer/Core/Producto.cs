@@ -40,15 +40,10 @@ namespace patrones.Observer
 	    foreach(var usuario in _usuarios)
 		usuario.Actualizar(this);
 
-	    /*
-	     *Form1 f = (Form1)Application.OpenForms[0];
-	     *
-	     *if(_usuarios.Count == 0)
-	     *	f.Notificar("No hay suscripciones");
-	     * 
-	     * f.Notivicar("_____________________________________");
-	     *
-	     * */
+	     if(_usuarios.Count == 0)
+		 ProductosUI.Notificar("No hay suscripciones");
+
+	     ProductosUI.Notificar("_____________________________________");
 	}
 
 	public void Quitar(IObserverUsuario usuario)

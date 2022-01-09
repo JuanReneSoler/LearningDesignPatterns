@@ -1,5 +1,4 @@
 
-
 namespace patrones.Observer
 {
     public class Usuario : IObserverUsuario
@@ -15,10 +14,7 @@ namespace patrones.Observer
 
 	public override string ToString() => $"{Nombre} {Apellido}";
 
-	public void Actualizar(Producto producto)
-	{
-	    //Form1 f = (Form1)Application.OpenForms[0];
-	    //f.Notificar($"El usuario {this} recibio la notificacion del producto {producto}");
-	}
+	public void Actualizar(Producto producto) 
+	    => ProductosUI.Notificar($"El usuario {this} recibio la notificacion del producto {producto}");
     }
 }

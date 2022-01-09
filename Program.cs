@@ -16,7 +16,8 @@
 //using patrones.Interpreter;
 //using patrones.Iterator;
 //using patrones.Mediator;
-using patrones.Memento;
+//using patrones.Memento;
+using patrones.Observer;
 
 namespace patrones
 {
