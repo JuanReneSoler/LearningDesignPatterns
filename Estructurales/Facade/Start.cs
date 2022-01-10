@@ -6,10 +6,8 @@ namespace patrones.Facade
     {
 	public static void RunPatron()
 	{
-	    //
-	    //Patron Facade
-	    /*var impresora = new FacadeImpresora("Hello World!");
-	    impresora.Imprimir();*/
+	    var impresora = new FacadeImpresora("Hello World!");
+	    impresora.Imprimir();
 	}
     }
 }

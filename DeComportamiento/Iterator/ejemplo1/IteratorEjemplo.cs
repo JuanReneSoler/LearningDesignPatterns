@@ -1,5 +1,5 @@
 
-namespace patrones.Iterator
+namespace patrones.Iterator.Ejemplo1
 {
     public abstract class IteratorEjemplo
     {

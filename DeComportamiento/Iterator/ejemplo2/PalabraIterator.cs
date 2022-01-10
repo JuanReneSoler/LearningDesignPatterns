@@ -1,6 +1,6 @@
 using System.Collections;
 
-namespace patrones.Iterator
+namespace patrones.Iterator.Ejemplo2
 {
     public class PalabraIterator : IEnumerator
     {

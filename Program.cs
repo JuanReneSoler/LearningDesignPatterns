@@ -15,13 +15,13 @@
 //using patrones.Command;
 //using patrones.Interpreter;
 //using patrones.Iterator;
-//using patrones.Mediator;
+using patrones.Mediator;
 //using patrones.Memento;
 //using patrones.Observer;
 //using patrones.State;
 //using patrones.Strategy;
 //using patrones.TemplateMethod;
-using patrones.Visitor;
+//using patrones.Visitor;
 
 namespace patrones
 {

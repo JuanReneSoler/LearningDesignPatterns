@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace patrones.Flyweight
 {
@@ -6,9 +7,7 @@ namespace patrones.Flyweight
     {
 	public static void RunPatron()
 	{
-	    //
-	    //Patron Flyweight
-	    /*var americana = new List<int>();
+	    var americana = new List<int>();
 	    var mexicana = new List<int>();
 
 	    var ffactory = new CFlyweightFactory();
@@ -39,7 +38,7 @@ namespace patrones.Flyweight
 		 receta.Mostrar();
 	     }
 
-	     i = ffactory.Adiciona("Hamburgesa");*/
+	     i = ffactory.Adiciona("Hamburgesa");
 	}
     }
 }

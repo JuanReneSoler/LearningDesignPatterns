@@ -1,29 +1,22 @@
 using System;
+using Core.patrones;
 
-namespace patrones.Iterator
+namespace patrones.Iterator.Ejemplo1
 {
-    public class UI
+    public class UI : BaseUI
     {
-	private Collection _collection = new ConcreteCollection();
-	private IteratorEjemplo _iterator;
-	private bool isRun;
+	Collection _collection = new ConcreteCollection();
+	IteratorEjemplo _iterator;
+	readonly Label _lbl;
+	Item primero = default(Item);
+	Item actual = default(Item);
+	string lista = string.Empty;
 
 	public UI()
 	{
 	    _iterator = _collection.CreateIterator();
-	    isRun = true;
-	}
-
-	public void Run()
-	{
-	    Console.CursorVisible = false;
-	    Item primero = default(Item);
-	    Item actual = default(Item);
-	    string lista = string.Empty;
-	    do
-	    {
-		Console.SetCursorPosition(0, 0);
-		Console.WriteLine($@"
+	    _lbl = new Label();
+	    _lbl.Title = $@"
 			
 Lista de elementos creados:
 {lista}
@@ -34,26 +27,16 @@ Elemento Actual <<{actual}>>
 presione a para agregar nuevo
 presione f para ver el primero
 presione n para ver el siguiente
-presiones q para salir
-
-");
-		if(Console.KeyAvailable)
-		{
-		    var keyPress = Console.ReadKey(true);
-
-		    if(keyPress.Key == ConsoleKey.Q) Quit();
-
-		    if(keyPress.Key == ConsoleKey.A) Add(out lista);
-
-		    if(keyPress.Key == ConsoleKey.F) GetFirst(out primero, out actual);
-
-		    if(keyPress.Key == ConsoleKey.N) GetNext(out actual);
-		}
-	    }while(isRun);
-	    Console.CursorVisible = true;
+presiones q para salir";
+	    this.Add(_lbl);
 	}
 
-	private void Quit() => isRun = false;
+	protected override void OnKeyPress(ConsoleKeyInfo keyInfo)
+	{
+	    if(keyInfo.Key == ConsoleKey.A) Add(out lista);
+	    if(keyInfo.Key == ConsoleKey.F) GetFirst(out primero, out actual);
+	    if(keyInfo.Key == ConsoleKey.N) GetNext(out actual);
+	}
 
 	private void Add(out string lista)
 	{

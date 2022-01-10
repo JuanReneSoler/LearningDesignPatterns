@@ -29,6 +29,7 @@ namespace Core.patrones
 
 	public void Load()
 	{
+	    Console.Clear();
 	    do
 	    {
 		Render();

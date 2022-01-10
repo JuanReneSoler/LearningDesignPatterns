@@ -23,7 +23,7 @@ namespace patrones.Mediator
 	    get => _nombre;
 	}
 
-	public override string ToString() => _nombre;
+	public override string ToString() => $"{_nombre} {_mensajes.Count}";
 	public Chat Chat { get; set; }
 	public void Enviar(string _mensaje, Usuario para) => Chat.Enviar(_mensaje, para, this);
 	public void Recibir(Mensaje mensaje) => _mensajes.Add(mensaje);

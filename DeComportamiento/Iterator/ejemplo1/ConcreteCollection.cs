@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace patrones.Iterator
+namespace patrones.Iterator.Ejemplo1
 {
     public class ConcreteCollection : Collection
     {

@@ -6,9 +6,7 @@ namespace patrones.ChainOfResponsability
     {
 	public static void RunPatron()
 	{
-	    //
-	    //Patron Chain of Responsability
-	    /*var comprador = new Comprador();
+	    var comprador = new Comprador();
 	    var gerente = new Gerente();
 	    var director = new Director();
 	    var directorGeneral = new DirectorGeneral();
@@ -24,7 +22,7 @@ namespace patrones.ChainOfResponsability
 		importe = double.Parse(Console.ReadLine());
 		compra.Importe = importe;
 		comprador.Procesar(compra);
-	    }*/
+	    }
 	}
     }
 }

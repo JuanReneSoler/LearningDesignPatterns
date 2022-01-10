@@ -6,9 +6,7 @@ namespace patrones.Command
     {
 	public static void RunPatron()
 	{
-	    //
-	    //Patron Command
-	    /*var empresa = new EmpresaInvoquer();
+	    var empresa = new EmpresaInvoquer();
 	    var producto = new ProductoReceiver();
 	    producto.Cantidad = 100;
 	    var ordenAlta = new AltaStockCommand(producto, 10);
@@ -16,7 +14,7 @@ namespace patrones.Command
 	    var ordenBaja = new BajaStockCommand(producto, 50);
 	    empresa.TomarOrden(ordenBaja);
 	    empresa.ProcesarOrdenes();
-	    Console.WriteLine($"Total Stock es {producto.Cantidad}");*/
+	    Console.WriteLine($"Total Stock es {producto.Cantidad}");
 	}
     }
 }
