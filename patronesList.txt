@@ -2,8 +2,7 @@ leyenda
 *    => nuevo patron
 **   => comprendido el codigo
 ***  => leida y comprendida la teoria
-
-
+----------------------------------------
 patrones de creacion
 *** abstract factory
 *** builder
@@ -31,4 +30,4 @@ patrones de comportamiento
 ** state
 ** strategy
 ** template method
-* visitor
+** visitor

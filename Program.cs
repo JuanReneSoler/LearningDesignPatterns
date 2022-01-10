@@ -20,7 +20,8 @@
 //using patrones.Observer;
 //using patrones.State;
 //using patrones.Strategy;
-using patrones.TemplateMethod;
+//using patrones.TemplateMethod;
+using patrones.Visitor;
 
 namespace patrones
 {
