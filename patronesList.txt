@@ -20,14 +20,14 @@ Patrones estructurales
 *** proxy
 
 patrones de comportamiento
-** chain of responsability
-** command
-** interpreter
-** iterator
-** mediator
-** memento
-** observer
-** state
-** strategy
-** template method
-** visitor
+*** chain of responsability
+*** command
+*** interpreter
+*** iterator
+*** mediator
+*** memento
+*** observer
+*** state
+*** strategy
+*** template method
+*** visitor
