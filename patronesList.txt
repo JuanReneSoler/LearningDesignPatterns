@@ -1,0 +1,33 @@
+leyenda
+*    => nuevo patron
+**   => comprendido el codigo
+***  => leida y comprendida la teoria
+----------------------------------------
+patrones de creacion
+*** abstract factory
+*** builder
+*** factory method
+*** prototype
+*** singleton
+
+Patrones estructurales
+*** Adapter
+*** Bridge
+*** composite
+*** decorator
+*** facade
+*** flyweight
+*** proxy
+
+patrones de comportamiento
+*** chain of responsability
+*** command
+*** interpreter
+*** iterator
+*** mediator
+*** memento
+*** observer
+*** state
+*** strategy
+*** template method
+*** visitor
