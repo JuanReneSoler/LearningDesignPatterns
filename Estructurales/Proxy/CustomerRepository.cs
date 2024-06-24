@@ -2,21 +2,17 @@ using System.Collections.Generic;
 
 namespace patrones.Proxy
 {
-    public class CustomerRepository : IRepository
-    {
-	IList<Customer> _customers;
-
-	public CustomerRepository()
+	public class CustomerRepository : IRepository
 	{
-	    _customers = new List<Customer>();
+		IList<Customer> _customers;
+
+		public CustomerRepository()
+		{
+			_customers = new List<Customer>();
+		}
+
+		public IList<Customer> GetAll() => _customers;
+
+		public void Save(Customer customer) => _customers.Add(customer);
 	}
-
-	public IList<Customer> GetAll() => _customers;
-
-	public void Save(Customer customer) => _customers.Add(customer);
-    }
 }
-
-
-
-

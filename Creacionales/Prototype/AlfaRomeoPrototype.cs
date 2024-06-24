@@ -1,13 +1,10 @@
-
 namespace patrones.Prototype
 {
-    public class AlfaRomeoPrototype : AutoPrototype
-    {
-	public AlfaRomeoPrototype()
+	public class AlfaRomeoPrototype : AutoPrototype
 	{
-	    _marca = "Alfa Romeo";
+		public AlfaRomeoPrototype()
+		{
+			_marca = "Alfa Romeo";
+		}
 	}
-    }
 }
-
-

@@ -2,23 +2,23 @@ using System;
 
 namespace patrones.Proxy
 {
-    public class Start
-    {
-	public static void RunPatron()
+	public class Start
 	{
-	    //IRepository repo = new CustomerRepository();
-	    IRepository repo = new CustomerRepositoryProxy();
-	    
-	    var custom = new Customer("custom 1");
-	    var custom2 = new Customer("custom 2");
+		public static void RunPatron()
+		{
+			//IRepository repo = new CustomerRepository();
+			IRepository repo = new CustomerRepositoryProxy();
 
-	    repo.Save(custom);
-	    repo.Save(custom2);
+			var custom = new Customer("custom 1");
+			var custom2 = new Customer("custom 2");
 
-	    foreach(var icustom in repo.GetAll())
-	    {
-		Console.WriteLine(icustom.Name);
-	    }
+			repo.Save(custom);
+			repo.Save(custom2);
+
+			foreach (var icustom in repo.GetAll())
+			{
+				Console.WriteLine(icustom.Name);
+			}
+		}
 	}
-    }
 }

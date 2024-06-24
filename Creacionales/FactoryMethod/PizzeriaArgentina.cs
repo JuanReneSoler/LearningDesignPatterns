@@ -1,14 +1,11 @@
 
-
 namespace patrones.FactoryMethod
 {
-    public class PizzeriaArgentina : Pizzeria
-    {
-	public PizzeriaArgentina()
+	public class PizzeriaArgentina : Pizzeria
 	{
-	    _origen = "Argentina";
+		public PizzeriaArgentina()
+		{
+			_origen = "Argentina";
+		}
 	}
-    }
 }
-
-

@@ -2,14 +2,11 @@ using System;
 
 namespace patrones.Bridge
 {
-    public class Azul : Color
-    {
-	public override void Pintar()
+	public class Azul : Color
 	{
-	    Console.WriteLine("Pintando Figura de Azul!");
+		public override void Pintar()
+		{
+			Console.WriteLine("Pintando Figura de Azul!");
+		}
 	}
-    }
 }
-
-
-

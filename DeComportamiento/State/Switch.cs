@@ -2,24 +2,24 @@ using System;
 
 namespace patrones.State
 {
-    public class Switch
-    {
-	Estado _estado;
-
-	public Switch()
+	public class Switch
 	{
-	    _estado = new Encendido();
-	}
+		Estado _estado;
 
-	public void DefinirEstado(Estado estado)
-	{
-	    _estado = estado;
-	}
+		public Switch()
+		{
+			_estado = new Encendido();
+		}
 
-	public void Presionar()
-	{
-	    _estado.ControlarEstado(this);
-	    Console.WriteLine(_estado.Describir());
+		public void DefinirEstado(Estado estado)
+		{
+			_estado = estado;
+		}
+
+		public void Presionar()
+		{
+			_estado.ControlarEstado(this);
+			Console.WriteLine(_estado.Describir());
+		}
 	}
-    }
 }

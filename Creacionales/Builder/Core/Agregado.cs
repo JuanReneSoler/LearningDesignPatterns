@@ -1,38 +1,35 @@
-
 namespace patrones.Builder
 {
-    public abstract class Agregado
-    {
-	protected string _descripcion;
-	public string Descripcion
+	public abstract class Agregado
 	{
-	    get => _descripcion;
+		protected string _descripcion;
+		public string Descripcion
+		{
+			get => _descripcion;
+		}
 	}
-    }
 
-    public class Anchoas : Agregado
-    {
-	public Anchoas()
+	public class Anchoas : Agregado
 	{
-	    _descripcion = "Anchoas";
+		public Anchoas()
+		{
+			_descripcion = "Anchoas";
+		}
 	}
-    }
 
-    public class Oregano : Agregado
-    {
-	public Oregano()
+	public class Oregano : Agregado
 	{
-	    _descripcion = "Oregano";
+		public Oregano()
+		{
+			_descripcion = "Oregano";
+		}
 	}
-    }
 
-    public class Berengenas : Agregado
-    {
-	public Berengenas()
+	public class Berengenas : Agregado
 	{
-	    _descripcion = "Berenjenas";
+		public Berengenas()
+		{
+			_descripcion = "Berenjenas";
+		}
 	}
-    }
 }
-
-

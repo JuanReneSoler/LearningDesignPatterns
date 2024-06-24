@@ -1,13 +1,12 @@
-
 namespace patrones.AbstractFactory
 {
-    public class PizzaItaliana : Pizza
-    {
-	public PizzaItaliana()
+	public class PizzaItaliana : Pizza
 	{
-	    this._descripcion = "Pizza Italiana";
+		public PizzaItaliana()
+		{
+			this._descripcion = "Pizza Italiana";
+		}
 	}
-    }
 }
 
 

@@ -25,25 +25,25 @@ using patrones.Mediator;
 
 namespace patrones
 {
-    public class Program
-    {
-	static void Run()
+	public class Program
 	{
-	    Console.Clear();
-	    Start.RunPatron();
-	    Finalice();
-	}
+		static void Run()
+		{
+			Console.Clear();
+			Start.RunPatron();
+			Finalice();
+		}
 
-	static void Finalice()
-	{
-	    Console.WriteLine(@"
+		static void Finalice()
+		{
+			Console.WriteLine(@"
 Press R to Restart
 and another key to Finalize");
-	    var keyPressed = Console.ReadKey(true);
-	    if(keyPressed.Key == ConsoleKey.R) Run();
-	    Console.Clear();
-	}
+			var keyPressed = Console.ReadKey(true);
+			if (keyPressed.Key == ConsoleKey.R) Run();
+			Console.Clear();
+		}
 
-        static void Main(string[] args) => Run();
-    }
+		static void Main(string[] args) => Run();
+	}
 }

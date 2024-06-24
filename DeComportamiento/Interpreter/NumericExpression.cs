@@ -1,19 +1,18 @@
-
 namespace patrones.Interpreter
 {
-    public class NumericExpression : IExpression
-    {
-	private string _value;
-
-	public NumericExpression(string token)
+	public class NumericExpression : IExpression
 	{
-	    _value = token;
-	}
+		private string _value;
 
-	public void Interpret(Context context)
-	{
-	    context.SetOperator(context.GetInteger(_value));
-	    context.Calculate();
+		public NumericExpression(string token)
+		{
+			_value = token;
+		}
+
+		public void Interpret(Context context)
+		{
+			context.SetOperator(context.GetInteger(_value));
+			context.Calculate();
+		}
 	}
-    }
 }

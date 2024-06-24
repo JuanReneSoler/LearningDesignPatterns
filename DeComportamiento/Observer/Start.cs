@@ -1,8 +1,7 @@
-
 namespace patrones.Observer
 {
     public class Start
     {
-	public static void RunPatron() => new ProductosUI().Load();
+        public static void RunPatron() => new ProductosUI().Load();
     }
 }

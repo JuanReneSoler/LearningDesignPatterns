@@ -1,17 +1,14 @@
-
 namespace patrones.Bridge
 {
-    public abstract class Figura
-    {
-	protected Color _color;
-	
-	public Figura(Color color)
+	public abstract class Figura
 	{
-	    _color = color;
+		protected Color _color;
+
+		public Figura(Color color)
+		{
+			_color = color;
+		}
+
+		public abstract void Dibujar();
 	}
-
-	public abstract void Dibujar();
-    }
 }
-
-

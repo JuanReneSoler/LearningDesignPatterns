@@ -4,8 +4,6 @@ namespace patrones.Bridge
 {
     public abstract class Color
     {
-	public abstract void Pintar();
+        public abstract void Pintar();
     }
 }
-
-

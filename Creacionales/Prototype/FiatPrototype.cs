@@ -1,14 +1,10 @@
-
-
 namespace patrones.Prototype
 {
-    public class FiatPrototype : AutoPrototype
-    {
-	public FiatPrototype()
+	public class FiatPrototype : AutoPrototype
 	{
-	    _marca = "Fiat";
+		public FiatPrototype()
+		{
+			_marca = "Fiat";
+		}
 	}
-    }
 }
-
-

@@ -1,14 +1,12 @@
-
-
 namespace patrones.AbstractFactory
 {
-    public class EmpanadaDeCarne : Empanada
-    {
-	public EmpanadaDeCarne()
+	public class EmpanadaDeCarne : Empanada
 	{
-	    this._descripcion = "Empanada de Carne";
+		public EmpanadaDeCarne()
+		{
+			this._descripcion = "Empanada de Carne";
+		}
 	}
-    }
 }
 
 

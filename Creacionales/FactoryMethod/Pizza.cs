@@ -1,19 +1,14 @@
-
-
 namespace patrones.FactoryMethod
 {
-    public abstract class Pizza
-    {
-	private string _origen;
-	protected string _descripcion;
-    	public Pizza(string origen)
+	public abstract class Pizza
 	{
-	    _origen = origen;
+		private string _origen;
+		protected string _descripcion;
+		public Pizza(string origen)
+		{
+			_origen = origen;
+		}
+
+		public override string ToString() => $"{_descripcion} hecha en: {_origen}";
 	}
-
-	public override string ToString() => $"{_descripcion} hecha en: {_origen}";
-    }
 }
-
-
-

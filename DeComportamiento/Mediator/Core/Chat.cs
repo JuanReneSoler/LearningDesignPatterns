@@ -2,21 +2,21 @@ using System.Collections.Generic;
 
 namespace patrones.Mediator
 {
-    public abstract class Chat
-    {
-	protected List<Mensaje> _mensajes;
-
-	public Chat()
+	public abstract class Chat
 	{
-	    _mensajes = new List<Mensaje>();
-	}
+		protected List<Mensaje> _mensajes;
 
-	public Mensaje[] Mensajes
-	{
-	    get => _mensajes.ToArray();
-	}
+		public Chat()
+		{
+			_mensajes = new List<Mensaje>();
+		}
 
-	public abstract void Enviar(string Mensaje, Usuario para, Usuario de);
-	public abstract void Registrar(Usuario usuario);
-    }
+		public Mensaje[] Mensajes
+		{
+			get => _mensajes.ToArray();
+		}
+
+		public abstract void Enviar(string Mensaje, Usuario para, Usuario de);
+		public abstract void Registrar(Usuario usuario);
+	}
 }

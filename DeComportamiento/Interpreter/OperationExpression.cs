@@ -1,18 +1,17 @@
-
 namespace patrones.Interpreter
 {
-    public class OperationExpression : IExpression
-    {
-	private string _operation;
-
-	public OperationExpression(string token)
+	public class OperationExpression : IExpression
 	{
-	    _operation = token;
-	}
+		private string _operation;
 
-	public void Interpret(Context context)
-	{
-	    context.SetOperation(_operation);
+		public OperationExpression(string token)
+		{
+			_operation = token;
+		}
+
+		public void Interpret(Context context)
+		{
+			context.SetOperation(_operation);
+		}
 	}
-    }
 }

@@ -1,38 +1,35 @@
-
 namespace patrones.Builder
 {
-    public abstract class Masa
-    {
-	protected string _descripcion;
-	public string Descripcion
+	public abstract class Masa
 	{
-	    get => _descripcion;
+		protected string _descripcion;
+		public string Descripcion
+		{
+			get => _descripcion;
+		}
 	}
-    }
 
-    public class AlMolde : Masa
-    {
-	public AlMolde()
+	public class AlMolde : Masa
 	{
-	    _descripcion = "Al Molde";
+		public AlMolde()
+		{
+			_descripcion = "Al Molde";
+		}
 	}
-    }
 
-    public class AlaPiedra : Masa
-    {
-	public AlaPiedra()
+	public class AlaPiedra : Masa
 	{
-	    _descripcion = "A la Piedra";
+		public AlaPiedra()
+		{
+			_descripcion = "A la Piedra";
+		}
 	}
-    }
 
-    public class Integral : Masa
-    {
-	public Integral()
+	public class Integral : Masa
 	{
-	    _descripcion = "Ingral";
+		public Integral()
+		{
+			_descripcion = "Ingral";
+		}
 	}
-    }
 }
-
-
