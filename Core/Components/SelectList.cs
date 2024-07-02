@@ -36,10 +36,10 @@ namespace Core.patrones
 			var str = $"{Title}\n";
 			var i = 1;
 			_items.ForEach((item) =>
-			 {
-				 str += $"{RenderCursor(i)} {item}\n";
-				 i++;
-			 });
+			{
+				str += $"{RenderCursor(i)} {item}\n";
+				i++;
+			});
 			return str;
 		}
 
